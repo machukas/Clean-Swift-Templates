@@ -66,7 +66,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		doSomething()
 	}
 	
-	// MARK: Do something
+	// MARK: Logic
 	
 	//@IBOutlet weak var nameTextField: UITextField!
 	
@@ -74,6 +74,8 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		let request = ___VARIABLE_sceneName___.Something.Request()
 		interactor?.doSomething(request: request)
 	}
+	
+	// MARK:- Display Logic
 	
 	func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
 		//nameTextField.text = viewModel.name

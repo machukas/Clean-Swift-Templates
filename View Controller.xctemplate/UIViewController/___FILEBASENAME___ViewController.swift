@@ -21,7 +21,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 	var interactor: ___VARIABLE_sceneName___BusinessLogic?
 	var router: (NSObjectProtocol & ___VARIABLE_sceneName___RoutingLogic & ___VARIABLE_sceneName___DataPassing)?
 	
-	// MARK: Life Cicle
+	// MARK: Init
 	
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -66,7 +66,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		doSomething()
 	}
 	
-	// MARK: Do something
+	// MARK: Logic
 	
 	//@IBOutlet weak var nameTextField: UITextField!
 	
@@ -74,6 +74,8 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		let request = ___VARIABLE_sceneName___.Something.Request()
 		interactor?.doSomething(request: request)
 	}
+	
+	// MARK:- Display Logic
 	
 	func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
 		//nameTextField.text = viewModel.name
