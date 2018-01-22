@@ -20,7 +20,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 	var interactor: ___VARIABLE_sceneName___BusinessLogic?
 	var router: (NSObjectProtocol & ___VARIABLE_sceneName___RoutingLogic & ___VARIABLE_sceneName___DataPassing)?
 	
-	// MARK : Life Cycle
+	// MARK: Life Cycle
 	
 	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -32,7 +32,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		setup()
 	}
 	
-	// MARK : Setup
+	// MARK: Setup
 	
 	private func setup() {
 		let viewController = self
@@ -47,7 +47,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		router.dataStore = interactor
 	}
 	
-	// MARK : Routing
+	// MARK: Routing
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if let scene = segue.identifier {
@@ -58,14 +58,14 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		}
 	}
 	
-	// MARK : View lifecycle
+	// MARK: View lifecycle
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		doSomething()
 	}
 	
-	// MARK : Logic
+	// MARK: Logic
 	
 	//@IBOutlet weak var nameTextField: UITextField!
 	
@@ -74,7 +74,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 		interactor?.doSomething(request: request)
 	}
 	
-	// MARK :- Display Logic
+	// MARK: - Display Logic
 	
 	func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
 		//nameTextField.text = viewModel.name
