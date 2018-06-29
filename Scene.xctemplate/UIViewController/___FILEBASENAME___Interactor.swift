@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___BusinessLogic {
-	func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
+	func setUp(request: ___VARIABLE_sceneName___.SetUp.Request)
 }
 
 protocol ___VARIABLE_sceneName___DataStore {
@@ -26,5 +26,7 @@ class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic,
 	
 	// MARK: Logic
 	
-	
+	func setUp(request: ___VARIABLE_sceneName___.SetUp.Request) {
+		
+	}
 }

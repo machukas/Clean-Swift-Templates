@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___DisplayLogic: class {
-	func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
+
 }
 
 class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___DisplayLogic {
@@ -62,7 +62,8 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		doSomething()
+		
+		self.interactor?.setUp(request: ___VARIABLE_sceneName___.SetUp.Request())
 	}
 	
 	// MARK: Logic
